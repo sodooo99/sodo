@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Internet Technology Fundamentals</title>
+	</head>
+	<body>
+		<h1>Welcome to Laboratory 1</h1>
+		<p>Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamca laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendereit in voluptate velit esse cillum dolore non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</body>
+	</html>
