@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>America</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="america-page">
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="japanese.html">Япон</a>
+    <a href="korea.html">Солонгос</a>
+    <a href="singapore.html">Сингапур</a>
+    <a href="china.html">Хятад</a>
+    <a href="america.html">Америк</a>
+    <a href="feedback.html">Санал асуулга</a>
+</nav>
+
+<header class="hero">
+    <div class="bg"></div>
+    <h1>Америк улс</h1>
+</header>
+
+
+<section class="about-america">
+    <h2 class="center-heading">Би Америкт дуртай шалтгаан</h2>
+    <p class="fancy-text">
+        Би Америкт дуртай, учир нь түүний олон янзын байгаль, хотууд, соёл,
+        хөгжил дэвшил, урлаг, спорт, технологиор дэлхийд алдартай. Нью-Йорк, Лос Анжелес, 
+        Сан Франциско зэрэг хотууд нь гайхалтай архитектур, амьдралын хэв маягтай. 
+        Мөн Америкийн уламжлалт баяр, уран сайхны үзүүлбэрүүд, олон үндэстний хоол хүнс 
+        надад маш сонирхолтой санагддаг.
+    </p>
+</section>
+
+
+<section class="foods">
+    <h2>Америк үндэсний хоол</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/AF1.jpg" alt="Burger">
+            <div class="food-name">Burger</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AF2.jpg" alt="Hotdog">
+            <div class="food-name">Hotdog</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AF3.jpg" alt="Apple Pie">
+            <div class="food-name">Apple Pie</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AF4.jpg" alt="Barbecue">
+            <div class="food-name">Barbecue</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AF5.jpg" alt="Clam Chowder">
+            <div class="food-name">Clam Chowder</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="foods traditions">
+    <h2>Америк соёл</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/AT1.jpg" alt="Thanksgiving">
+            <div class="food-name">Thanksgiving</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AT2.jpg" alt="Independence Day">
+            <div class="food-name">Independence Day</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AT3.jpg" alt="Halloween">
+            <div class="food-name">Halloween</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AT4.jpg" alt="Super Bowl">
+            <div class="food-name">Super Bowl</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/AT5.jpg" alt="Black Friday">
+            <div class="food-name">Black Friday</div>
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+let images = [
+"images/A1.jpg",
+"images/A2.jpg",
+"images/A3.jpg",
+"images/A4.jpg",
+"images/A5.jpg"
+];
+
+let i = 0;
+let bg = document.querySelector(".bg");
+
+function changeBg(){
+    bg.style.opacity = 0;
+
+    setTimeout(()=>{
+        bg.style.backgroundImage = `url(${images[i]})`;
+        bg.style.opacity = 1;
+        i = (i + 1) % images.length;
+    },500);
+}
+
+setInterval(changeBg, 4000);
+changeBg();
+</script>
+
+</body>
+</html>

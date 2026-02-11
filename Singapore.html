@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Singapore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="singapore-page">
+
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="japanese.html">Япон</a>
+    <a href="korea.html">Солонгос</a>
+    <a href="singapore.html">Сингапур</a>
+    <a href="china.html">Хятад</a>
+    <a href="america.html">Америк</a>
+    <a href="feedback.html">Санал асуулга</a>
+</nav>
+
+<header class="hero">
+    <div class="bg"></div>
+    <h1>Сингапур улс</h1>
+</header>
+
+
+<section class="about-singapore">
+    <h2 class="center-heading">Би Сингапурт дуртай шалтгаан</h2>
+    <p class="fancy-text">
+        Би Сингапурт дуртай, учир нь цэвэрхэн хотууд, орчин үеийн архитектур,
+        олон үндэстний соёл, орчин үеийн амьдрал, болон олон сонирхолтой газруудтай. 
+        Байгалийн цэцэрлэг, Marina Bay Sands, Sentosa арал зэрэг нь миний анхаарлыг татдаг. 
+        Хотын амьдрал хурдан боловч зохион байгуулалт сайтай нь надад их таалагддаг.
+    </p>
+</section>
+
+
+<section class="foods">
+    <h2>Сингапур үндэсний хоол</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/SF1.jpg" alt="Chilli Crab">
+            <div class="food-name">Chilli Crab</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/SF2.jpg" alt="Hainanese Chicken Rice">
+            <div class="food-name">Hainanese Chicken Rice</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/SF3.jpg" alt="Laksa">
+            <div class="food-name">Laksa</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/SF4.jpg" alt="Satay">
+            <div class="food-name">Satay</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/SF5.jpeg" alt="Kaya Toast">
+            <div class="food-name">Kaya Toast</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="foods traditions">
+    <h2>Сингапур соёл</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/ST1.jpg" alt="Dragon Dance">
+            <div class="food-name">Dragon Dance</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/ST2.jpg" alt="Chinatown">
+            <div class="food-name">Chinatown</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/ST3.jpg" alt="Hari Raya">
+            <div class="food-name">Hari Raya</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/ST4.jpg" alt="Deepavali">
+            <div class="food-name">Deepavali</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/ST5.avif" alt="National Day">
+            <div class="food-name">National Day</div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+let images = [
+"images/S1.jpg",
+"images/S2.jpeg",
+"images/S3.jpg",
+"images/S4.jpg",
+"images/S5.jpg"
+];
+
+let i = 0;
+let bg = document.querySelector(".bg");
+
+function changeBg(){
+    bg.style.opacity = 0;
+
+    setTimeout(()=>{
+        bg.style.backgroundImage = `url(${images[i]})`;
+        bg.style.opacity = 1;
+        i = (i + 1) % images.length;
+    },500);
+}
+
+setInterval(changeBg, 4000);
+changeBg();
+</script>
+
+</body>
+</html>

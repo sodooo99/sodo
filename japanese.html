@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Japan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="japan-page">
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="japanese.html">Япон</a>
+    <a href="korea.html">Солонгос</a>
+    <a href="singapore.html">Сингапур</a>
+    <a href="china.html">Хятад</a>
+    <a href="america.html">Америк</a>
+    <a href="feedback.html">Санал асуулга</a>
+</nav>
+
+<header class="hero">
+    <div class="bg"></div>
+    <h1>Япон улс</h1>
+</header>
+
+<section class="about-japan">
+    <h2 class="center-heading">Би Япон улсад дуртай шалтгаан</h2>
+    <p class="fancy-text">
+        Би Япон улсад дуртай, учир нь байгалийн үзэсгэлэнт газар нутаг,
+        орчин үеийн дэвшилтэт технологи, тайван амгалан хотууд болон баялаг соёлтой. 
+        Япон улс уламжлал ба шинэчлэлийг маш онцгой байдлаар хослуулж чаддаг. 
+        Сакура цэцэглэх улирлаас эхлээд Токиогийн неон гэрлэн чимэглэл хүртэл бүх 
+        зүйл нь ид шидийн мэт санагддаг. Мөн уламжлалт хоол хүнс, урлаг, фестивал нь
+        надад их таалагддаг.
+    </p>
+</section>
+
+<section class="foods">
+    <h2>Япон үндэсний хоол</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="japanfood1.webp" alt="Sushi">
+            <div class="food-name">Sushi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="japanfood2.jpg" alt="Ramen">
+            <div class="food-name">Ramen</div>
+        </div>
+
+        <div class="food-card">
+            <img src="japanfood3.jpg" alt=Tempura">
+            <div class="food-name">Tempura</div>
+        </div>
+
+        <div class="food-card">
+            <img src="japanfood4.jpg" alt="Takoyaki">
+            <div class="food-name">Takoyaki</div>
+        </div>
+
+        <div class="food-card">
+            <img src="japanfood5.jpg" alt="Okonomiyaki">
+            <div class="food-name">Okonomiyaki</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="foods traditions">
+    <h2>Япон соёл</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/jpC1.jpg" alt="Хүүхэлдэй">
+            <div class="food-name">Daruma</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/jpC2.webp" alt="Сэвүүр">
+            <div class="food-name">Rakugo</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/jpC3.jpeg" alt="Сандаал">
+            <div class="food-name">Sandals</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/jpC4.png" alt="ЁОЁО">
+            <div class="food-name">YOYO</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/jpC5.webp" alt="КИМОНО">
+            <div class="food-name">Kimono</div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+let images = [
+"images/3.webp",
+"images/bg1.avif",
+"images/bg2.jpg"
+];
+
+let i = 0;
+let bg = document.querySelector(".bg");
+
+function changeBg(){
+    bg.style.opacity = 0;
+
+    setTimeout(()=>{
+        bg.style.backgroundImage = `url(${images[i]})`;
+        bg.style.opacity = 1;
+        i = (i + 1) % images.length;
+    },500);
+}
+
+setInterval(changeBg, 4000);
+changeBg();
+</script>
+
+</body>
+</html>

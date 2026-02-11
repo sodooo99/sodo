@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="feedback-page">
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="japanese.html">Япон</a>
+    <a href="korea.html">Солонгос</a>
+    <a href="singapore.html">Сингапур</a>
+    <a href="china.html">Хятад</a>
+    <a href="america.html">Америк</a>
+    <a href="feedback.html">Санал асуулга</a>
+</nav>
+
+<section class="feedback-form">
+    <h1>Санал хүсэлт / Feedback</h1>
+
+    <form action="#" method="post">
+        <label for="name">Таны нэр:</label><br>
+        <input type="text" id="name" name="name" placeholder="Нэрээ бичнэ үү" required><br><br>
+
+        <label for="comment">Сэтгэгдэл:</label><br>
+        <textarea id="comment" name="comment" placeholder="Сэтгэгдлээ бичнэ үү" required></textarea><br><br>
+
+    
+        <label>Хаашаа тааламжтай байсан бэ?</label><br>
+        <input type="radio" id="layout" name="section" value="layout" required>
+        <label for="layout">1. Хуудасны загвар</label><br>
+
+        <input type="radio" id="links" name="section" value="links">
+        <label for="links">2. Холбоосууд</label><br>
+
+        <input type="radio" id="source" name="section" value="source">
+        <label for="source">3. Эх код</label><br>
+
+        <input type="radio" id="images" name="section" value="images">
+        <label for="images">4. Зургуудаас</label><br><br>
+
+          
+        <label for="rating">Үнэлгээ (1-10):</label><br>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5" oninput="ratingOutput.value = rating.value">
+        <output name="ratingOutput" id="ratingOutput">5</output><br><br>
+
+    
+        <input type="submit" value="Илгээх">
+        <input type="reset" value="Арилгах">
+    </form>
+</section>
+
+
+</body>
+</html>

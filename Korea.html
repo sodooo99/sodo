@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Korea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="korea-page">
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="japanese.html">Япон</a>
+    <a href="korea.html">Солонгос</a>
+    <a href="singapore.html">Сингапур</a>
+    <a href="china.html">Хятад</a>
+    <a href="america.html">Америк</a>
+    <a href="feedback.html">Санал асуулга</a>
+</nav>
+
+<header class="hero">
+    <div class="bg"></div>
+    <h1>Солонгос улс</h1>
+</header>
+
+<section class="about-korea">
+    <h2 class="center-heading">Би Солонгост дуртай шалтгаан</h2>
+    <p class="fancy-text">
+        Би Солонгос улсад дуртай, учир нь түүний үзэсгэлэнт байгаль, өвөрмөц соёл,
+        хөгжил дэвшилтэй хотууд, болон сонирхолтой уламжлалт зан заншилтай. 
+        Өдөр тутмын амьдрал нь хурдан, үр бүтээлтэй боловч уламжлалт ёс заншил 
+        хэзээ ч мартагддаггүй нь надад маш сонирхолтой санагддаг. 
+        Солонгосын баяр наадмууд, урлаг, хөгжмийн салбар, уламжлалт хоол хүнс 
+        зэрэг нь намайг байнга татдаг. Түүнчлэн К-поп, драма, түүх, архитектур 
+        гээд олон талын өвөрмөц соёлыг туршиж мэдрэх боломжтой нь надад их таалагддаг.
+    </p>
+</section>
+
+
+<section class="foods">
+    <h2>Үндэсний хоолнууд</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/KF1.jpg" alt="Bibimbap">
+            <div class="food-name">Bibimbap</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KF2.jpg" alt="Tteokbokki">
+            <div class="food-name">Tteokbokki</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KF3.jpg" alt="Kimchi">
+            <div class="food-name">Kimchi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KF4.jpg" alt="Kimbab">
+            <div class="food-name">Kimbab</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KF5.jpg" alt="Bulgogi">
+            <div class="food-name">Bulgogi</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TRADITION SECTION -->
+<section class="foods traditions">
+    <h2>Солонгос Соёл</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="images/KT1.jpg" alt="Hanock">
+            <div class="food-name">Hanock</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KT2.jpg" alt="Hanbok">
+            <div class="food-name">Hanbok</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KT3.jpg" alt="Minhwa">
+            <div class="food-name">Minhwa</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KT4.jpg" alt="PANSORI">
+            <div class="food-name">PANSORI</div>
+        </div>
+
+        <div class="food-card">
+            <img src="images/KT5.jpg" alt="Maedeup">
+            <div class="food-name">Maedeup</div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+let images = [
+"images/K11.webp",
+"images/K2.jpg",
+"images/K3.jpg",
+"images/K4.webp",
+"images/KK.jpg"
+];
+
+let i = 0;
+let bg = document.querySelector(".bg");
+
+function changeBg(){
+    bg.style.opacity = 0;
+
+    setTimeout(()=>{
+        bg.style.backgroundImage = `url(${images[i]})`;
+        bg.style.opacity = 1;
+        i = (i + 1) % images.length;
+    },500);
+}
+
+setInterval(changeBg, 4000);
+changeBg();
+</script>
+
+</body>
+</html>
